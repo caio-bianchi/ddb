@@ -1,0 +1,14 @@
+# PUT only, 10k ops, 20 goroutines
+go run ./cmd/metrics --coord=127.0.0.1:9000 --op=put --count=10000 --conc=20 --csv=metrics1.csv
+
+# GET only (faz warmup automático com PUT antes)
+go run ./cmd/metrics --coord=127.0.0.1:9000 --op=get --count=10000 --conc=20 --csv=metrics2.csv
+
+# Modo misto (50% PUT, 50% GET)
+go run ./cmd/metrics --coord=127.0.0.1:9000 --op=mix --count=10000 --conc=20 --csv=metrics3.csv
+
+
+
+# Gerando CSV custom
+go run ./cmd/metrics --coord=127.0.0.1:9000 --op=put --count=50000 --conc=80 --csv=out_put_50k.csv
+

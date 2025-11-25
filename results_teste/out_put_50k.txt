@@ -1,0 +1,24 @@
+=== Distributed DB Metrics Benchmark ===
+Coordinator: 127.0.0.1:9000
+Op mode   : put
+Ops count : 50000
+Workers   : 80
+CSV output: out_put_50k.csv
+========================================
+
+=== Resultados ===
+Total ops   : 50000
+Sucesso     : 50000 (100.00%)
+PUT count   : 50000
+GET count   : 0
+DEL count   : 0
+Duração     : 96.705s
+Throughput  : 517.04 ops/s
+
+--- Latência (ms) ---
+média : 154.456 ms
+p50   : 134.444 ms
+p95   : 334.671 ms
+p99   : 452.307 ms
+max   : 688.300 ms
+CSV salvo em: out_put_50k.csv

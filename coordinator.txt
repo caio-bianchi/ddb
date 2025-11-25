@@ -1,0 +1,1 @@
+go run ./cmd/coordinator --address=127.0.0.1:9000 --shards=3

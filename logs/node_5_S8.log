@@ -1,0 +1,7 @@
+=== Node ===
+ID: 5
+RPC: 127.0.0.1:9105
+RAFT: 127.0.0.1:9205
+Shard: 4
+2025/11/25 08:36:20 Node 5 failed to listen on 127.0.0.1:9105: listen tcp 127.0.0.1:9105: bind: address already in use
+exit status 1

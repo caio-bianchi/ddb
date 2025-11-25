@@ -1,0 +1,26 @@
+=== Distributed DB Metrics Benchmark ===
+Coordinator: 127.0.0.1:9000
+Op mode   : mix
+Ops count : 20000
+Workers   : 40
+CSV output: metrics3.csv
+========================================
+[warmup] Populando o cluster com PUTs iniciais...
+[warmup] Concluído.
+
+=== Resultados ===
+Total ops   : 20000
+Sucesso     : 20000 (100.00%)
+PUT count   : 10000
+GET count   : 10000
+DEL count   : 0
+Duração     : 15.982s
+Throughput  : 1251.37 ops/s
+
+--- Latência (ms) ---
+média : 31.887 ms
+p50   : 20.826 ms
+p95   : 80.728 ms
+p99   : 99.275 ms
+max   : 217.613 ms
+CSV salvo em: metrics3.csv

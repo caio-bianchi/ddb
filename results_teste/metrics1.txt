@@ -1,0 +1,24 @@
+=== Distributed DB Metrics Benchmark ===
+Coordinator: 127.0.0.1:9000
+Op mode   : put
+Ops count : 10000
+Workers   : 20
+CSV output: metrics1.csv
+========================================
+
+=== Resultados ===
+Total ops   : 10000
+Sucesso     : 10000 (100.00%)
+PUT count   : 10000
+GET count   : 0
+DEL count   : 0
+Duração     : 3.362s
+Throughput  : 2974.19 ops/s
+
+--- Latência (ms) ---
+média : 6.705 ms
+p50   : 5.287 ms
+p95   : 14.963 ms
+p99   : 23.419 ms
+max   : 47.660 ms
+CSV salvo em: metrics1.csv

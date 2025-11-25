@@ -1,0 +1,5 @@
+=== Coordinator ===
+Address: 127.0.0.1:9000
+Shards: 2
+2025/11/25 08:34:26 Coordinator failed to listen on 127.0.0.1:9000: listen tcp 127.0.0.1:9000: bind: address already in use
+exit status 1

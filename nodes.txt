@@ -1,0 +1,16 @@
+go run ./cmd/node --id=1 --rpc=127.0.0.1:9101 --raft=127.0.0.1:9201 --shard=0 --coord=127.0.0.1:9000
+go run ./cmd/node --id=2 --rpc=127.0.0.1:9102 --raft=127.0.0.1:9202 --shard=1 --coord=127.0.0.1:9000
+go run ./cmd/node --id=3 --rpc=127.0.0.1:9103 --raft=127.0.0.1:9203 --shard=2 --coord=127.0.0.1:9000
+
+
+
+
+# Shard 0 (3 réplicas)
+go run ./cmd/node --id=1 --rpc=127.0.0.1:9101 --raft=127.0.0.1:9201 --shard=0 --coord=127.0.0.1:9000
+go run ./cmd/node --id=2 --rpc=127.0.0.1:9102 --raft=127.0.0.1:9202 --shard=0 --coord=127.0.0.1:9000
+go run ./cmd/node --id=3 --rpc=127.0.0.1:9103 --raft=127.0.0.1:9203 --shard=0 --coord=127.0.0.1:9000
+
+# Shard 1 (3 réplicas)
+go run ./cmd/node --id=4 --rpc=127.0.0.1:9104 --raft=127.0.0.1:9204 --shard=1 --coord=127.0.0.1:9000
+go run ./cmd/node --id=5 --rpc=127.0.0.1:9105 --raft=127.0.0.1:9205 --shard=1 --coord=127.0.0.1:9000
+go run ./cmd/node --id=6 --rpc=127.0.0.1:9106 --raft=127.0.0.1:9206 --shard=1 --coord=127.0.0.1:9000
